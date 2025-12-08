@@ -1,6 +1,6 @@
 export default function Landing() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-orange-500">
+    <div className="flex items-center justify-center min-h-screen bg-orange-500 animate-pulse">
       <div className="text-center">
         <h1 className="text-6xl font-bold text-gray-900 mb-4">
           Hello World
@@ -12,5 +12,6 @@ export default function Landing() {
     </div>
   );
 }
+
 
 
