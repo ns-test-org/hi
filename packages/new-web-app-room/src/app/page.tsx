@@ -7,7 +7,7 @@ export default function Landing() {
       
       {/* Content */}
       <div className="text-center px-6 relative z-10">
-        <h1 className="text-6xl font-bold text-white mb-4 animate-float">
+        <h1 className="text-6xl font-bold text-white mb-4 animate-float animate-color-shift">
           Hello World
         </h1>
         <p className="text-xl text-orange-100 animate-float" style={{ animationDelay: '0.2s' }}>
@@ -17,6 +17,7 @@ export default function Landing() {
     </div>
   );
 }
+
 
 
 

@@ -193,5 +193,30 @@ body {
   animation: gradient-shift-reverse 15s ease-in-out infinite;
 }
 
+/* Color shifting animation for text */
+@keyframes color-shift {
+  0%, 100% {
+    color: #ffffff;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  }
+  25% {
+    color: #fef3c7;
+    text-shadow: 0 0 30px rgba(254, 243, 199, 0.6);
+  }
+  50% {
+    color: #fde68a;
+    text-shadow: 0 0 40px rgba(253, 230, 138, 0.7);
+  }
+  75% {
+    color: #fcd34d;
+    text-shadow: 0 0 30px rgba(252, 211, 77, 0.6);
+  }
+}
+
+.animate-color-shift {
+  animation: color-shift 8s ease-in-out infinite;
+}
+
+
 
 
