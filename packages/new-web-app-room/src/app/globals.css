@@ -166,31 +166,32 @@ body {
 @keyframes gradient-shift {
   0%, 100% {
     transform: scale(1) translate(0, 0);
-    opacity: 1;
+    filter: brightness(1);
   }
   50% {
-    transform: scale(1.05) translate(2%, -2%);
-    opacity: 0.95;
+    transform: scale(1.1) translate(5%, -5%);
+    filter: brightness(1.1);
   }
 }
 
 @keyframes gradient-shift-reverse {
   0%, 100% {
     transform: scale(1) translate(0, 0);
-    opacity: 0.5;
+    filter: brightness(0.95);
   }
   50% {
-    transform: scale(1.08) translate(-3%, 3%);
-    opacity: 0.6;
+    transform: scale(1.15) translate(-5%, 5%);
+    filter: brightness(1.05);
   }
 }
 
 .animate-gradient-shift {
-  animation: gradient-shift 8s ease-in-out infinite;
+  animation: gradient-shift 10s ease-in-out infinite;
 }
 
 .animate-gradient-shift-reverse {
-  animation: gradient-shift-reverse 12s ease-in-out infinite;
+  animation: gradient-shift-reverse 15s ease-in-out infinite;
 }
+
 
 
