@@ -162,3 +162,35 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
+/* Subtle gradient shift animations for orange background */
+@keyframes gradient-shift {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05) translate(2%, -2%);
+    opacity: 0.95;
+  }
+}
+
+@keyframes gradient-shift-reverse {
+  0%, 100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1.08) translate(-3%, 3%);
+    opacity: 0.6;
+  }
+}
+
+.animate-gradient-shift {
+  animation: gradient-shift 8s ease-in-out infinite;
+}
+
+.animate-gradient-shift-reverse {
+  animation: gradient-shift-reverse 12s ease-in-out infinite;
+}
+
+
